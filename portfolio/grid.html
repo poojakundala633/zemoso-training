@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Grid</title>
+    <style>
+         .navbar{
+            height: 50px;
+            border: 1px solid rgb(179, 145, 10);
+        }
+
+        .navbar a:hover{
+            color: rgb(179, 145, 10);
+        }
+
+        .im{
+            text-align: center;
+            color: rgb(210, 210, 8);
+            margin-top: 10px;
+        }
+        .con{
+            background-color: aqua;
+            
+        }
+        .container1{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(3,1fr);
+            height: 150vh;
+            grid-gap: 3px;
+            grid-template-areas: 
+            "content1 content3 content4"
+            "content2 content3 content4"
+            "content2 content5 content6";
+        }
+        
+        #content1{
+            grid-area: content1;
+        }
+        #content2{
+            grid-area: content2;
+        }
+        #content3{
+            grid-area: content3;
+        }
+        #content4{
+            grid-area: content4;
+        }
+        #content5{
+            grid-area: content5;
+        }
+        #content6{
+            grid-area: content6;
+        }
+        .con img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="navbar" id="nav_bar">
+                <h3 class="logo" style="color:rgb(179, 145, 10)">Port<span>folio</span></h3>
+                <li><button class="btn"><a href="#contac_t">CONTACT</a></button></li>
+                <li><a href="grid.html">GALLERY</a></li>
+                <li><a href="skills.html">ABOUT</a></li>
+                <li><a href="education.html">EDUCATION</a></li>
+                <li><a href="#nav_bar">HOME</a></li>
+            </div>
+
+
+    <h1 class="im">IMAGE GRID</h1>
+    <div class="container1">
+    <div class="con" id="content1"><img src="images/pooja1.jpeg"></div>
+    <div class="con" id="content2"><img src="images/pooja12.jpeg"></div>
+    <div class="con" id="content3"><img src="images/pooja3.jpeg"></div>
+    <div class="con" id="content4"><img src="images/pooja4.jpeg"></div>
+    <div class="con" id="content5"><img src="images/pooja5.jpeg"></div>
+    <div class="con" id="content6"><img src="images/pooja6.jpeg"></div>
+    </div>
+
+    <div class="contact" id="contac_t">
+        <div class="images">
+        <h3>CONTACT ME</h3>
+        <h2>POOJA KUNDALA</h2>
+        <p>To connect me you can follow me on the following platforms.</p>
+        <img src="images/insta.jpeg" height="70px" width="70px">
+        <img src="images/linked.jpeg" height="70px" width="70px">
+        <a href="https://github.com/poojakundala633/" target="_blank"><img src="images/git.jpeg" height="70px" width="70px"></a>
+        </div>
+</body>
+</html>
