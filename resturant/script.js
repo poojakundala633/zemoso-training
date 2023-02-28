@@ -220,6 +220,11 @@ for (let i = 0; i < box.length; i++) {
 	let i = 1;
 	if (Object.keys(items).length === 0) { // if items object is empty
 		rows.innerHTML = `<tr><td colspan="6" style="text-align:center;">Table is empty. Please add items.</td></tr>`;
+		let total = document.getElementById("total");
+		total.innerHTML = `TOTAL: 0`;
+		document.getElementById(
+		"modal-footer"
+	).innerHTML = `<p id="bill" onclick="generateBill('${tableNo}')" >GENERATE BILL</p>`;
 	} else {
 	for (let [item, qty] of Object.entries(items)) {
 		rows.insertAdjacentHTML(
