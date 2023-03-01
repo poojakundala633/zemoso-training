@@ -1,0 +1,12 @@
+types:
+number,string,boolean,null,undefines,void,object,arrays,tuples....
+
+any (any type)
+never and unknown
+
+situation??
+a function accets 2 numbers
+a function allows returns a string
+
+syntax:
+let variablename:type = value
