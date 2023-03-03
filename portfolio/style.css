@@ -195,3 +195,82 @@
     text-align: center;
 }
 
+.modal_wraper{
+    position: fixed;
+    left:0;
+    top: 0;
+    background: rgba(215, 242, 250, 0.562);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s ease-in-out;
+}
+
+.modal_container{
+    background-color: white;
+    width: 560px;
+    border-radius: 2px;
+    position: relative;
+    color: black;
+}
+
+.modal_container button.cross{
+    position: absolute;
+    font-size: 32px;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 90%;
+    margin-top: -32px;
+    color: rgb(241, 233, 233);
+}
+
+.modal_container button.cross:hover{
+    color: white;
+}
+
+.active{
+    opacity: 1;
+}
+
+form input{
+    height: 40px;
+    width: 450px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin-left: 50px;
+    text-align: center;
+}
+
+label{
+   display: block;
+   text-align: center;
+    font-size: 20px;
+    color: rgb(255, 34, 0);
+    margin-top: 15px;
+}
+
+.form-head h4{
+    background-color: rgb(14, 6, 101);
+    color: white;
+    border: 1px solid black;
+    text-align: center;
+    height: 30px;
+}
+
+.action button{
+    margin-left: 200px;
+    background-color:rgb(255, 34, 0);
+    cursor: pointer;
+}
+
+.active {
+    opacity: 1;
+    pointer-events: auto;
+}

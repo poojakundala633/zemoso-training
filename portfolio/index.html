@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Portfolio</title>
     <style>
         nav{
@@ -79,14 +80,36 @@
                 <div class="cont">
                 <h3>HIIII! I AM <span>POOJA KUNDALA</span></h3>
                 <h3>An enthusiast developer.</h3>
-                <button class="but">LET'S TALK</button>
+                <button class="but" id="trigger">LET'S TALK</button>
+                <div class="modal_wraper">
+                    <div class="modal_container">
+                        <div class="form-head">
+                        <h4>Let's Talk</h4>
+                        <button class="cross">&times;</button>
+                        </div>
+                        <form action="">
+                            <label>USERNAME:</label>
+                            <input type="text" name="" id="" placeholder="Username">
+                            <label>EMAIL:</label>
+                            <input type="email" name="" id="" placeholder="Mail@gmail.com">
+                            <label>PHONE NUMBER:</label>
+                            <input type="text" name="" id="" placeholder="8097986875">
+                            <label>COMMENT</label>
+                            <input type="text" name="" id="" placeholder="Comment">
+                        </form>
+                        <div class="action">
+                            <button class="but" id="submit">submit</button>
+                        </div>
+                    </div>
+                </div>
+    
             </div>
             </div>
         </nav>
     
 
         <!-- EDUCATIO -->
-        <div class="education" id="edu_cation">
+        <div class="education" id="edu_cation" data-aos="fade-right">
             <div class="box school">
                 <img src="images/study.jpeg" height="70px" width="70px">
                 <h4 class="edu"><u>AITAM</u></h4>
@@ -114,7 +137,7 @@
 
         <!--ABOUT-->
 
-        <div class="skills" id="skills_cont">
+        <div class="skills" id="skills_cont" data-aos="fade-left">
             <nav>
                 <h3>ABOUT ME</h3>
             <div class="flex">
@@ -161,5 +184,14 @@
             </div>
         </div>
     </div>
+    <script src="style.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        offset: 300,
+      }
+      );
+    </script>
 </body>
 </html>
